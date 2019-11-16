@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body bgcolor = "red">
+
+<center>
+<h1> "Spam" or "Not a Spam" predictor</h1>
+<form action = "{{url_for('predict')}}" method = "post">
+<p>Enter Your Statement Below:</p>
+<!--<p><input type = "text" name = "name" required = "required" style = "height:200px"/></p>-->
+<p><textarea rows="5" cols="45" name="name" required = "required"></textarea></p>
+<p><input type = "submit" value = "Predict" required = "required"></p>
+</form>
+<br>
+<br>
+{{final_output}}
+</center>
+</body>
+</html>
+
