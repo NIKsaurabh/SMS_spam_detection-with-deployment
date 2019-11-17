@@ -1,1 +1,1 @@
-web: gunicorn app:app_spam
+web: gunicorn app_spam:app
