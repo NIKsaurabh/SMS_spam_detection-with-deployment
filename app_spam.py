@@ -21,7 +21,7 @@ def home():
     return render_template('input_spam.html')
 
 def preProcess(data):
-    data = re.sub('[^a-zA-Z]',' ',data)
+    #data = re.sub('[^a-zA-Z]',' ',data)
     data = data.lower()
     word = data.split()
     word = [WordNetLemmatizer().lemmatize(w) for w in word if w not in set(stopwords.words('english'))]
